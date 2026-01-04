@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Oddities & Puzzles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div id="cursor"></div>
+        <img src="images/crtBobbysmalls.jpeg" alt="Logo" width="300" class="logo">
+        <h1>CONTACT</h1>
+        <p>Welcome to my online lab / portfolio.</p>
+
+        <!-- Navigation -->
+        <nav>
+            <p><a href="index.html">[100] HOME</a></p>
+            <p><a href="projects.html">[200] PROJECTS</a></p>
+            <p><a href="about.html">[300] ABOUT</a></p>
+            <p><a href="contact.html">[400] CONTACT</a></p>
+        </nav>
+
+        <!-- Contact Info -->
+        <p>If you want to get in touch about a project or custom item, email me:</p>
+        <p>Contact: <span id="email"></span></p>
+        <script>
+            const user = "you";          // change this
+            const domain = "example.com"; // change this
+            document.getElementById("email").innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+        </script>
+        <!-- ASCII test animation -->
+            <pre id="ascii-test" aria-hidden="true">
+            xxxxxxx
+            </pre>
+    </div>
+
+    <script src="effects.js"></script>
+</body>
+</html>

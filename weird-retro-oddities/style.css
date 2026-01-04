@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #00FF00; 
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+a {
+    color: #FFFF00; 
+    text-decoration: none;
+}
+
+.screen {
+    position: relative;  /* <-- makes child absolute positioning work */
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto 20px auto; /* top 40px, bottom 20px, horizontal auto */
+    border: 2px solid #00FF00;
+    box-shadow: 0 0 20px #00FF00;
+}
+.logo {
+    position: absolute;   /* allows us to place it exactly */
+    top: 10px;            /* distance from the top of .screen */
+    right: 50px;          /* distance from the right edge */
+    width: 300px;         /* adjust to fit nicely in the box */
+    height: auto;         /* maintain aspect ratio */
+
+}
+
+h1 {
+    color: #FF00FF; 
+}
+
+nav p {
+    margin: 5px 0;
+}
+
+.projects p, .about p {
+    color: #00FFFF; 
+    margin-left: 20px;
+}
+
+/* Blinking cursor */
+#cursor {
+    display: inline-block;
+    width: 10px;
+    background: #00FF00;
+    animation: blink 1s step-start infinite;
+    vertical-align: bottom;
+}
+#ascii-vines, #ascii-test, #ascii-banner {
+  font-family: monospace;
+  font-size: 11px; /* tweak to fit */
+  line-height: 1;
+  color: #00FF00;
+  white-space: pre;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+
+/* Flicker effect handled in JS */
+@keyframes blink {
+    50% { background: black; }
+}
